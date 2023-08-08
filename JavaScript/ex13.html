@@ -1,0 +1,57 @@
+<DOCUMENTYPE.html>
+    <head>
+        <title>Ex13</title>
+    </head>
+    <body>
+        <script lang= "JavaScript">
+            var v1,v2,v3;
+                   v1 = parseFloat(window.prompt("Digite o primeiro lado:"))
+                   v2 = parseFloat(window.prompt("Digite o segundo lado:"))
+                   v3 = parseFloat(window.prompt("Digite o terceiro lado:"))
+                    
+                    if(v1 + v2 > v3 && v2 + v3 > v1 && v3 + v1 > v2)
+{
+    document.write("É UM TRIANGULO")
+    if(v1 === v2 && v2 === v3)
+{
+    document.write("  EQUILATERO")
+    document.write("<br><img src='equilatero.png'>")
+
+}
+else  if(v1 === v2  ||  v1 === v3 || v2 === v3)
+{
+    document.write(" ISOSELES")
+
+    document.write("<br><img src='isoseles.png'>")
+
+}
+else
+{
+    
+    document.write(" ESCALENO")
+    document.write("<br><img src='escaleno.jfif'>")
+}
+}
+else
+{
+
+    document.write(" NAO É UM TRIANGULO")
+
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+       
+    </body>
+</html>
+<br>
+//Feito por Alexandre pinheiro e Arthur Gomes de Aguiar

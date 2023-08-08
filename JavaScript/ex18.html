@@ -1,0 +1,53 @@
+<DOCUMENTYPE.html>
+    <head>
+        <title>Ex18</title>
+        <style>
+        .azul
+        {
+            background-color: blue;
+            color: white;
+        }
+        .vermelho
+        {
+            background-color: red;
+            color: white;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <table background color =''red>
+            <script lang= "JavaScript">
+            var y, i;
+            document.write("<table align ='center' border='1'>");
+            document.write("<tr>");
+            document.write("<td>");   
+                            
+            for (y = 1; y <= 20; y++ )
+            {
+             document.write("<table border='0'>"); 
+                for(i = 1; i <=10; i++)
+                {
+                    resultado = i * y;
+                    if (y % 2 == 0)
+                    {
+                    document.write("<tr class = 'azul'><td align='right'>" + y + "</td><td align='center'> x </td><td align='right'>" + i + "</td><td align='center'> = </td><td align='right'>" + resultado + "</td></tr>")
+                    }
+                    if (y%2 == 1) 
+                    {
+                    document.write("<tr class = 'vermelho'><td align='right'>" + y + "</td><td align='center'> x </td><td align='right'>" + i + "</td><td align='center'> = </td><td align='right'>" + resultado + "</td></tr>")                                  
+                    }
+                }        
+                document.write("</td>");  
+                if (y%5==0)
+                {
+                document.write("</td>");    
+                }
+            }
+            document.write("</tr>");
+         document.write("</table>");
+        </script>   
+    </body>
+</html>
+
+//Feito por Alexandre pinheiro e Arthur Gomes de Aguiar
